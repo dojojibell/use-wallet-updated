@@ -82,6 +82,7 @@ const HECO: Currency = {
   decimals: 18,
 }
 
+
 const CHAIN_INFORMATION = new Map<number, ChainInformation | ChainType>([
   [
     1,
@@ -129,6 +130,18 @@ const CHAIN_INFORMATION = new Map<number, ChainInformation | ChainType>([
       shortName: 'Goerli',
       explorerUrl: `https://goerli.etherscan.io`,
       testnet: true,
+    },
+  ],
+   [
+    10,
+    {
+      id: 10,
+      nativeCurrency: ETH,
+      type: 'optimism',
+      fullName: 'Optimism',
+      shortName: 'optimism',
+      explorerUrl: `https://optimistic.etherscan.io`,
+      testnet: false,
     },
   ],
   [
